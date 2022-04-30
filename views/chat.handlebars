@@ -1,0 +1,30 @@
+<body>
+  <br>
+  <div class="userWelcome">Welcome to Cumulus Chat, <span id="usernameio">{{username}}</span>!</div>
+  <a href='/'><button class="logoutButton" id="logout" type='submit'>Logout</button></a>
+  <div >
+    
+    <div id ="cumulus-chat" class="messageBox">
+
+      <div id="cumulus-window">
+
+            <ul class="messageList">
+              <div id="output"></div>
+              <div id="feedback"></div>
+            </ul> 
+
+      </div>
+
+  </div>
+
+  <div class="input-group mb-3 messageInput">
+    <input type="text" class="form-control" placeholder="Message" aria-label="Message" aria-describedby="basic-addon2" id="message">
+    <button id="send" type="button">Send</button>
+  </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+   
+  </body>
+
